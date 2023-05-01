@@ -1,0 +1,34 @@
+<%- include('header'); %>
+<section class="contact_section layout_padding">
+    <div class="container contact_heading">
+        <h2>
+            Login
+        </h2>
+        <p>Please enter your details to login</p>
+    </div>
+
+    <div class="container" id="login-container">
+        <form action="/users/create-session" method="post">
+            <div class="form-column">
+
+                <div class="form-group col-md-6">
+                    <label> Email</label>
+                    <input type="email" class="form-control" name="email" />
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label> Password</label>
+                    <input type="password" class="form-control" name="password" />
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+            </div>
+
+            <div class="d-flex justify-content container">
+                <button type="submit" class="">Login</button>
+            </div>
+
+        </form>
+    </div>
+
+</section>
