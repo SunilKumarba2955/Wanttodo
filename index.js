@@ -3,6 +3,9 @@ const app = express();
 
 const port = 8001;
 
+// Main router from Home page
+app.use('/', require('./routers/home'));
+
 app.listen(port, function(err) {
     if(err) {
         console.log(err);
